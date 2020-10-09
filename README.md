@@ -17,7 +17,7 @@ A simple Calculator application built with React.
   <h1 align="center">Calculator App</h1>
 
   <p align="center">
-    <a href=""><strong>View Demo</strong></a>
+    <a href="https://oa7calculator.herokuapp.com/"><strong>View Demo</strong></a>
     ·
     <a href="https://github.com/OA7/React_Calculator/issues">Report Bug</a>
     ·
