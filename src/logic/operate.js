@@ -16,7 +16,7 @@ const operate = (a, b, operation) => {
       try {
         return num1.div(num2).toString();
       } catch (error) {
-        return undefined;
+        return 'error';
       }
     default:
       return 0;
