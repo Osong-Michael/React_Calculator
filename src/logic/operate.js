@@ -6,14 +6,18 @@ const operate = (a, b, operation) => {
   switch (operation) {
     case '+':
       return num1.plus(num2).toString();
-    case '&times;':
+    case 'x':
       return num1.times(num2).toString();
-    case '&minus;':
+    case '-':
       return num1.minus(num2).toString();
     case '%':
       return (num1.times(num2)).div(100).toString();
     case '÷':
-      return num1.div(num2).toString();
+      try {
+        return num1.div(num2).toString();
+      } catch (error) {
+        return undefined;
+      }
     default:
       return 0;
   }
