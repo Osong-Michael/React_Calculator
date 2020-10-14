@@ -15,11 +15,10 @@ const ButtonPanel = ({ handleClick }) => {
   ];
 
   const orangeBtns = ['÷', 'x', '-', '+', '='];
-
   const buttonList = buttonGroups.map(btnGrp => (
     <div className="btn-grp" key={Math.random()}>
       {
-        btnGrp.map(btn => (orangeBtns.includes(btn) ? <Button key={Math.random()} name={btn} handleClick={handleClick} /> 
+        btnGrp.map(btn => (orangeBtns.includes(btn) ? <Button key={Math.random()} name={btn} handleClick={handleClick} />
           : btn === '0' ? <Button key={Math.random()} name={btn} color="#E0E0E0" wide handleClick={handleClick} />
             : <Button key={Math.random()} name={btn} color="#E0E0E0" handleClick={handleClick} />))
       }

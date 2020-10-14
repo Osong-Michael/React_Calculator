@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 
 const Display = ({ result, operation }) => (
   <div className="display">
-    {`${result} ${operation || ''}`}
+    <p>{`${result}`}</p>
+    <p>{`${operation || ''}`}</p>
   </div>
 );
 

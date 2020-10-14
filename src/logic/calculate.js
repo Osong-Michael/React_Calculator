@@ -62,7 +62,6 @@ const calculate = (data, btn) => {
   } else if (nums.includes(btn)) {
     total = total ? total + btn : btn;
   }
-
   return { total, next, operation };
 };
 
